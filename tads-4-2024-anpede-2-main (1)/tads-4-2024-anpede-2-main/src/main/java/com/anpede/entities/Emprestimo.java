@@ -45,16 +45,16 @@ public class Emprestimo {
         return dataRetirada;
     }
 
-    public void setDataRetirada(Date dataRetirada) {
-        this.dataRetirada = dataRetirada;
+    public void setDataRetirada(java.util.Date date) {
+        this.dataRetirada = (Date) date;
     }
 
     public Date getDataDevolucao() {
         return dataDevolucao;
     }
 
-    public void setDataDevolucao(Date dataDevolucao) {
-        this.dataDevolucao = dataDevolucao;
+    public void setDataDevolucao(java.util.Date date) {
+        this.dataDevolucao = (Date) date;
     }
 
     public String getMotivo() {
@@ -85,5 +85,6 @@ public class Emprestimo {
     public String toString() {
         return "Emprestimo{" + "id=" + id + ", dataRetirada=" + dataRetirada + ", dataDevolucao=" + dataDevolucao +
                 ", motivo='" + motivo + '\'' + ", equipamento=" + equipamento + ", associado=" + associado + '}';
-    }    
+    }
+    
 }
