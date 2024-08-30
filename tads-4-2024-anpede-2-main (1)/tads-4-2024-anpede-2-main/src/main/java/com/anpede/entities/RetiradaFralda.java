@@ -56,8 +56,8 @@ public class RetiradaFralda {
         return dataRetirada;
     }
 
-    public void setDataRetirada(Date dataRetirada) {
-        this.dataRetirada = dataRetirada;
+    public void setDataRetirada(java.util.Date date) {
+        this.dataRetirada = (Date) date;
     }
 
     public Fralda getFralda() {
